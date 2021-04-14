@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@id/layout_curve"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_repeatCount="2"-->
+<!--        android:layout_margin="20dp"-->
+<!--        app:lottie_rawRes="@raw/address_lottie"-->
+<!--        android:id="@+id/lottieanim"-->
+<!--        app:lottie_loop="true"-->
+<!--        >-->
+<!--    </com.airbnb.lottie.LottieAnimationView>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="@drawable/curve_layout"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:id="@+id/layout_curve"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_above="@id/btn_choose_address"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_baseline_location_on_24"-->
+<!--                >-->
+<!--            </ImageView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Area name"-->
+<!--                    android:textColor="@color/red"-->
+<!--                    android:background="?attr/selectableItemBackground"-->
+<!--                    android:id="@+id/txtvw_area_city_name"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:visibility="invisible"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    >-->
+<!--                </TextView>-->
+
+<!--                <ProgressBar-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:id="@+id/progress_bar_area"-->
+<!--                    >-->
+<!--                </ProgressBar>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Accurate Address"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:id="@+id/txtvw_full_address"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:visibility="invisible"-->
+<!--                >-->
+<!--            </TextView>-->
+
+<!--            <ProgressBar-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:id="@+id/progress_bar_address"-->
+<!--                >-->
+<!--            </ProgressBar>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"-->
+<!--            android:theme="@style/MatButtonSourceCode"-->
+<!--            android:id="@+id/btn_choose_address"-->
+<!--            android:textAllCaps="false"-->
+<!--            app:strokeColor="@color/theme_color"-->
+<!--            android:text="Choose Address"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_above="@id/btn_confirm_location"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            >-->
+<!--        </com.google.android.material.button.MaterialButton>-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:backgroundTint="@color/theme_color"-->
+<!--            android:text="Confirm Location"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:id="@+id/btn_confirm_location"-->
+<!--            >-->
+<!--        </Button>-->
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

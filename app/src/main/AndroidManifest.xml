@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.laundryapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LaundryApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UI.OrderDetailsActivity"></activity>
+        <activity android:name=".UI.RefferEarnActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAJThaomd_QO6X5PMKxf21zMRKDIgxs2fw" />
+
+        <activity android:name=".UI.ConfirmActivity" />
+        <activity android:name=".UI.PaymentActivity" />
+        <activity android:name=".UI.DateTimeActivity" />
+        <activity android:name=".UI.LocationActivity" />
+        <activity android:name=".UI.NotificationActivity" />
+        <activity android:name=".UI.AddAddressActivity" />
+        <activity android:name=".UI.DryCleanActivity" />
+        <activity android:name=".UI.WashIronActivity" />
+        <activity android:name=".UI.IronActivity" />
+        <activity android:name=".UI.WashFoldActivity" />
+        <activity android:name=".UI.OTPActivity" />
+        <activity android:name=".UI.PhonenumActivity" />
+        <activity android:name=".UI.AddressActivity" />
+        <activity android:name=".UI.UpdatePasswordActivity" />
+        <activity android:name=".UI.WalkthroughIntroActivity" />
+        <activity android:name=".UI.BtmNavigationActivity" />
+        <activity android:name=".UI.SignupActivity" />
+        <activity android:name=".UI.ForgetPswrdActivity" />
+        <activity android:name=".UI.LoginActivity" />
+        <activity android:name=".UI.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

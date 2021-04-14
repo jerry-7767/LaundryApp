@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebg"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Orders"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="26dp"
+        >
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="120dp"
+        android:elevation="60dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioButton
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Ongoing Orders"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:id="@+id/radio_ongoingorder"
+            android:elevation="10dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/radio_text_color"
+            android:layout_margin="6dp"
+            >
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="160dp"
+            android:id="@+id/radio_pastorders"
+            android:layout_height="wrap_content"
+            android:text="Past Orders"
+            android:padding="8dp"
+            android:elevation="10dp"
+            android:textAlignment="center"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/radio_text_color"
+            android:layout_margin="6dp"
+            >
+        </RadioButton>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curve_layout"
+        android:layout_marginTop="160dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_order_status"
+            >
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

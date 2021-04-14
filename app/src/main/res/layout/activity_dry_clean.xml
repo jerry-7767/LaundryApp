@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebg"
+    tools:context=".UI.DryCleanActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laundry "
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="30sp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose the types of cloths.."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/txtvw_name_categry_dry_clean"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="170dp"
+        android:elevation="60dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioButton
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Men's"
+            android:padding="4dp"
+            android:textAlignment="center"
+            android:elevation="10dp"
+            android:id="@+id/radio_men_btn_dry_clean"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/radio_text_color"
+            android:layout_margin="4dp"
+            >
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Women's"
+            android:textAlignment="center"
+            android:padding="4dp"
+            android:id="@+id/radio_women_btn_dry_clean"
+            android:elevation="10dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/radio_text_color"
+            android:layout_margin="4dp"
+            >
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Kid's"
+            android:textAlignment="center"
+            android:padding="4dp"
+            android:elevation="10dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:id="@+id/radio_kids_btn_dry_clean"
+            android:textColor="@drawable/radio_text_color"
+            android:layout_margin="4dp"
+            >
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Other's"
+            android:padding="4dp"
+            android:elevation="10dp"
+            android:textAlignment="center"
+            android:id="@+id/radio_others_btn_dry_clean"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/radio_text_color"
+            android:layout_margin="4dp"
+            >
+        </RadioButton>
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curve_layout"
+        android:layout_marginTop="200dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/layout_category_dry_clean"
+            >
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_category_dry_clean"
+            android:id="@+id/layout_viewpager"
+            >
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:id="@+id/viewpager_coupon_dry_clean"
+            >
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator_dry_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            app:dotsColor="@color/dot_color"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="12dp"
+            app:dotsSpacing="4dp"
+            app:dotsWidthFactor="2.5"
+            app:progressMode="true"
+            android:layout_below="@id/viewpager_coupon_dry_clean"
+            android:layout_centerHorizontal="true"
+            app:selectedDotColor="@color/status_bar_color" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

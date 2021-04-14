@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        >-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/radio_payment_select"-->
+<!--            android:buttonTint="@color/black"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            >-->
+<!--        </RadioButton>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Cash on Delivery"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="19sp"-->
+<!--            android:id="@+id/txtvw_payment_options_name"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            >-->
+<!--        </TextView>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            >-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:id="@+id/imgvw_payment"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:src="@drawable/google_pay"-->
+<!--            android:layout_margin="4dp"-->
+<!--            >-->
+<!--        </ImageView>-->
+
+<!--        </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+</RelativeLayout>

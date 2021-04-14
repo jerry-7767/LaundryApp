@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img_wlktrgh_image"
+        android:src="@drawable/firstscreen"
+        android:scaleType="centerCrop"
+        >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PICKUP &amp; DROP"
+        android:id="@+id/txtvw_wlktrgh_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        >
+    </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We'll pick up &amp; Drop Laundry from\nyour location."
+            android:id="@+id/txtvw_wlktrgh_desc"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

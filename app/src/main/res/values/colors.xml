@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#ff0cf6fd</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="theme_color">#ff0cf6fd</color>
+    <color name="light_theme_color">#8EF8FB</color>
+    <color name="status_bar_color">#FF00B1B6</color>
+    <color name="sky_blue">#E6FAFF</color>
+    <color name="black">#FF000000</color>
+    <color name="grey">#535353</color>
+    <color name="lightgrey">#DDDDDD</color>
+    <color name="offwhite">#F6F6F6</color>
+    <color name="dot_color">#B3B3B3</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#40B800</color>
+</resources>

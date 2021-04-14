@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Laundry App</string>
+    <string name="facebook_app_id">207647097652237</string>
+    <string name="fb_login_protocol_scheme">fb207647097652237</string>
+    <string-array name="lables">
+        <item>Location</item>
+        <item>Date/Time</item>
+        <item>Payment</item>
+        <item>Confirm</item>
+    </string-array>
+    <string name="category_name1">Wash and Fold</string>
+    <string name="Rs">&#x20B9;</string>
+</resources>

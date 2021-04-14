@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebg"
+    tools:context=".UI.OTPActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification...."
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="55dp"
+        >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/curve_white_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="55dp"
+            android:layout_centerHorizontal="true"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP sent on"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 7362947261"
+            android:textSize="18sp"
+            android:id="@+id/txtvw_phone_num"
+            android:textColor="@color/black"
+            >
+        </TextView>
+
+        </LinearLayout>
+
+        <com.chaos.view.PinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:cursorVisible="true"
+            android:textSize="18sp"
+            android:id="@+id/pinvw_otp"
+            app:itemCount="6"
+            app:viewType="rectangle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="0dp"
+            app:itemWidth="48dp"
+            style="@style/PinWidget.PinView"
+            app:hideLineWhenFilled="false"
+            app:lineColor="@color/theme_color"
+            android:textColor="@color/black"
+            >
+        </com.chaos.view.PinView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer"
+            android:textSize="18sp"
+            android:layout_below="@id/pinvw_otp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/counttime"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/red"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:textSize="19sp"
+            android:layout_below="@id/pinvw_otp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:id="@+id/txtvw_resent_otp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/red"
+            >
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="240dp"
+            android:layout_height="58dp"
+            app:cardCornerRadius="50dp"
+            android:layout_below="@id/pinvw_otp"
+            android:layout_marginTop="110dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/card"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/btn_verify"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="VERIFY"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/homebg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orders"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="15dp"
+        >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curve_layout"
+        android:layout_marginTop="50dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:listitem="@layout/single_order_list_layout"
+            android:id="@+id/recyclervw_order_list"
+            android:layout_above="@id/layout_calculation"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/txtvw_empty_view"
+            android:text="Ohhhh.... your Cart is Empty!\ngo back and add cloths"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/layout_calculation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#f8f8f8"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" % Do you have any discount code?"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/txtvw_discount_code"
+                >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/layout_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/txtvw_discount_code"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvw_total_price_order_list"
+                    android:text="00.00"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18sp"
+                    >
+                </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_descount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_total"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="Code6777"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="0.00"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    >
+                </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_descount"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Charges"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="40"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vw_dash_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/layout_delivery"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/dash_line"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_grand_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vw_dash_line"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grand Total"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="00.00"
+                    android:textColor="@color/black"
+                    android:id="@+id/txtvw_grand_total"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="65dp"-->
+<!--                style="@style/Widget.MaterialComponents.Button"-->
+<!--                android:text="Schedule Pickup"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="19sp"-->
+<!--                app:cornerRadius="20dp"-->
+<!--                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"-->
+<!--                android:theme="@style/MatButtonSourceCode"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:id="@+id/btn_schedule_pickup"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:layout_below="@id/layout_grand_total"-->
+<!--                >-->
+<!--            </com.google.android.material.button.MaterialButton>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button_style_parent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/theme_color"
+                app:cardCornerRadius="28dp"
+                android:layout_marginRight="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/layout_grand_total"
+                android:layout_marginLeft="80dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_schedule_pickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_horizontal">
+
+                    <ProgressBar
+                        android:id="@+id/button_progress"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/button_text"
+                        android:indeterminate="true"
+                        android:indeterminateTint="@color/black"
+                        android:indeterminateTintMode="src_atop"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/button_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="30"
+                        android:text="Schedule Pickup"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/side_home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/side_orders"
+            android:title="MY ORDERS" />
+        <item
+            android:id="@+id/side_profile"
+            android:title="PROFILE" />
+        <item
+            android:id="@+id/side_setting"
+            android:title="SETTING" />
+        <item
+            android:id="@+id/side_contact"
+            android:title="CONTACT US" />
+
+    </group>
+
+</menu>

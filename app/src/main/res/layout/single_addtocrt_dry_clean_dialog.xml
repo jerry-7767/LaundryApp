@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/layout_product_detail"
+            >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/tshirt"
+            android:id="@+id/imgvw_dialog_clth_image_dry_clean"
+            >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="T-Shirt"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/txtvw_clth_dialog_name_dry_clean"
+            >
+        </TextView>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dry Clean"
+                android:id="@+id/txtvw_dialog_catg_name_dry_clean"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                >
+            </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_per_price"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Per piece price"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textEnd"
+                        android:text="10"
+                        android:id="@+id/txtvw_clth_dialog_perpiece_price_dry_clean"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="18sp"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/layout_per_price"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"
+                        android:layout_marginLeft="26dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtvw_clth_dialog_total_price_dry_clean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textAlignment="textEnd"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout_quantity_incr_decr"
+            android:layout_below="@id/layout_product_detail"
+            android:layout_centerHorizontal="true"
+            >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/plus"
+            android:id="@+id/imgvw_decrement_quantity_dry_clean"
+            >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="@color/black"
+            android:id="@+id/txtvw_quantity_dry_clean"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_horizontal"
+            >
+        </TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imgvw_increment_quantity_dry_clean"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/minus"
+            >
+        </ImageView>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/layout_quantity_incr_decr"
+            android:backgroundTint="@color/theme_color"
+            android:text="Add to Bag"
+            android:layout_marginTop="6dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_add_to_bag_dry_clean"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            >
+        </Button>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

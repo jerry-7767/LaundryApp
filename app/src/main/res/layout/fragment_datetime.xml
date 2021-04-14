@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:grid="http://schemas.android.com/tools"
+    android:background="@color/offwhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <devs.mulham.horizontalcalendar.HorizontalCalendarView-->
+<!--        android:id="@+id/calendarView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:textColorNormal="#bababa"-->
+<!--        app:textColorSelected="@color/black"-->
+<!--        app:selectorColor="@color/theme_color"-->
+<!--    />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Select Time"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/calendarView"-->
+<!--        android:id="@+id/txtvw_slct_tme_text"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        >-->
+<!--    </TextView>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/radio_group_hour_time"-->
+<!--        >-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="220dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        app:cardCornerRadius="50dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:id="@+id/card"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:backgroundTint="@color/theme_color"-->
+<!--        app:cardElevation="20dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="?attr/selectableItemBackground"-->
+<!--            android:clickable="true"-->
+<!--            android:id="@+id/btn_1nxt"-->
+<!--            android:focusable="true">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:ellipsize="end"-->
+<!--                android:lines="1"-->
+<!--                android:text="Next"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="19sp"-->
+<!--                />-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <com.example.laundryapp.ADAPTER.RadioGridLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_below="@id/txtvw_slct_tme_text"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:columnCount="2"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:id="@+id/radio_group_hour_time"-->
+<!--        >-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/radio_selector"-->
+<!--            android:button="@android:color/transparent"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:text="10 AM - 12 PM"-->
+<!--            android:id="@+id/radio_1"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textColor="@drawable/radio_text_color"-->
+<!--            >-->
+<!--        </RadioButton>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:id="@+id/radio_2"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:text="12 PM - 2 PM"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="18sp"-->
+<!--            android:background="@drawable/radio_selector"-->
+<!--            android:button="@android:color/transparent"-->
+<!--            android:textColor="@drawable/radio_text_color"-->
+<!--            >-->
+<!--        </RadioButton>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/radio_selector"-->
+<!--            android:button="@android:color/transparent"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:text="2 PM - 4 PM"-->
+<!--            android:id="@+id/radio_3"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textColor="@drawable/radio_text_color"-->
+<!--            >-->
+<!--        </RadioButton>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:id="@+id/radio_4"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:text="4 PM - 6 PM"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="18sp"-->
+<!--            android:background="@drawable/radio_selector"-->
+<!--            android:button="@android:color/transparent"-->
+<!--            android:textColor="@drawable/radio_text_color"-->
+<!--            >-->
+<!--        </RadioButton>-->
+
+<!--    </com.example.laundryapp.ADAPTER.RadioGridLayout>-->
+
+</RelativeLayout>
+
+    <!--    //first radio group layout-->
+    <!--    <com.example.laundryapp.ADAPTER.RadioGridLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_below="@id/txtvw_slct_tme_text"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:columnCount="6"-->
+    <!--        android:id="@+id/radio_group_hour_time"-->
+    <!--        >-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:background="@drawable/circle_radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="1"-->
+    <!--            android:id="@+id/radio_1"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:id="@+id/radio_2"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="2"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:background="@drawable/circle_radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:background="@drawable/circle_radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="3"-->
+    <!--            android:id="@+id/radio_3"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:id="@+id/radio_4"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="4"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:background="@drawable/circle_radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:background="@drawable/circle_radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="5"-->
+    <!--            android:id="@+id/radio_5"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:id="@+id/radio_6"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="6"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:background="@drawable/circle_radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--                <RadioButton-->
+    <!--                    android:layout_width="50dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@drawable/circle_radio_selector"-->
+    <!--                    android:button="@android:color/transparent"-->
+    <!--                    android:layout_margin="2dp"-->
+    <!--                    android:text="7"-->
+    <!--                    android:id="@+id/radio_7"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:textColor="@drawable/circle_radio_text_color"-->
+    <!--                    >-->
+    <!--                </RadioButton>-->
+
+    <!--                <RadioButton-->
+    <!--                    android:layout_width="50dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:id="@+id/radio_8"-->
+    <!--                    android:layout_margin="2dp"-->
+    <!--                    android:text="8"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:background="@drawable/circle_radio_selector"-->
+    <!--                    android:button="@android:color/transparent"-->
+    <!--                    android:textColor="@drawable/circle_radio_text_color"-->
+    <!--                    >-->
+    <!--                </RadioButton>-->
+
+    <!--                <RadioButton-->
+    <!--                    android:layout_width="50dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@drawable/circle_radio_selector"-->
+    <!--                    android:button="@android:color/transparent"-->
+    <!--                    android:layout_margin="2dp"-->
+    <!--                    android:text="9"-->
+    <!--                    android:id="@+id/radio_9"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:textColor="@drawable/circle_radio_text_color"-->
+    <!--                    >-->
+    <!--                </RadioButton>-->
+
+    <!--                <RadioButton-->
+    <!--                    android:layout_width="50dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:id="@+id/radio_10"-->
+    <!--                    android:layout_margin="2dp"-->
+    <!--                    android:text="10"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:background="@drawable/circle_radio_selector"-->
+    <!--                    android:button="@android:color/transparent"-->
+    <!--                    android:textColor="@drawable/circle_radio_text_color"-->
+    <!--                    >-->
+    <!--                </RadioButton>-->
+
+    <!--                <RadioButton-->
+    <!--                    android:layout_width="50dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@drawable/circle_radio_selector"-->
+    <!--                    android:button="@android:color/transparent"-->
+    <!--                    android:layout_margin="2dp"-->
+    <!--                    android:text="11"-->
+    <!--                    android:id="@+id/radio_11"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:textColor="@drawable/circle_radio_text_color"-->
+    <!--                    >-->
+    <!--                </RadioButton>-->
+
+    <!--                <RadioButton-->
+    <!--                    android:layout_width="50dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:id="@+id/radio_12"-->
+    <!--                    android:layout_margin="2dp"-->
+    <!--                    android:text="12"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:background="@drawable/circle_radio_selector"-->
+    <!--                    android:button="@android:color/transparent"-->
+    <!--                    android:textColor="@drawable/circle_radio_text_color"-->
+    <!--                    >-->
+    <!--                </RadioButton>-->
+
+    <!--    </com.example.laundryapp.ADAPTER.RadioGridLayout>-->
+
+    <!--    //second radion group layout-->
+    <!--    <com.example.laundryapp.ADAPTER.RadioGridLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_below="@id/txtvw_slct_tme_text"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_marginRight="10dp"-->
+    <!--        android:columnCount="2"-->
+    <!--        android:id="@+id/radio_group_am_pm_time"-->
+    <!--        >-->
+
+    <!--    <RadioButton-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:background="@drawable/circle_radio_selector"-->
+    <!--        android:button="@android:color/transparent"-->
+    <!--        android:layout_margin="2dp"-->
+    <!--        android:text="AM"-->
+    <!--        android:id="@+id/radio_am"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textColor="@drawable/circle_radio_text_color"-->
+    <!--        >-->
+    <!--    </RadioButton>-->
+
+    <!--    <RadioButton-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:id="@+id/radio_pm"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:text="PM"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:background="@drawable/circle_radio_selector"-->
+    <!--        android:button="@android:color/transparent"-->
+    <!--        android:textColor="@drawable/circle_radio_text_color"-->
+    <!--        >-->
+    <!--    </RadioButton>-->
+
+    <!--    </com.example.laundryapp.ADAPTER.RadioGridLayout>-->
+
+    <!--    //third radion group layout-->
+    <!--    <RadioGroup-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_below="@id/radio_group_hour_time"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:id="@+id/radio_group_minute_time"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        >-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="00"-->
+    <!--            android:id="@+id/radio_min_00"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:id="@+id/radio_min_15"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="15"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:background="@drawable/radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:id="@+id/radio_min_30"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="30"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:background="@drawable/radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--        <RadioButton-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:id="@+id/radio_min_45"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:text="45"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:background="@drawable/radio_selector"-->
+    <!--            android:button="@android:color/transparent"-->
+    <!--            android:textColor="@drawable/circle_radio_text_color"-->
+    <!--            >-->
+    <!--        </RadioButton>-->
+
+    <!--    </RadioGroup>-->
